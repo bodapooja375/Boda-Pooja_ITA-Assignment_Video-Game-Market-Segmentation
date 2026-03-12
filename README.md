@@ -26,6 +26,9 @@ This project analyzes global video game sales data to uncover patterns in the ga
 ---
 
 # Dataset Description
+Dataset File: `vgsales.csv`
+
+The dataset is included in this repository so that the analysis can be reproduced. It contains historical video game sales data across platforms, genres, publishers, and regions.
 
 The dataset contains global video game sales information including:
 

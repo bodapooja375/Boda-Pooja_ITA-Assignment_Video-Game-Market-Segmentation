@@ -1,128 +1,182 @@
-# IT Applications Assignment
-## Market Segmentation in the Global Video Game Industry using Unsupervised Machine Learning
+# IT Applications Assignment  
+## Market Segmentation in the Global Video Game Industry
 
-Student: Boda Pooja  
-Section: B  
-Roll Number: IPM06091  
-Instructor: Dr. Karan Verma
-
----
-
-# Project Overview
-
-This project analyzes global video game sales data using unsupervised machine learning techniques. The objective is to identify hidden market segments based on regional sales patterns using PCA and K-Means clustering.
+**Student:** Boda Pooja  
+**Section:** B  
+**Roll Number:** IPM06091  
+**Instructor:** Dr. Karan Verma  
 
 ---
 
-# Dataset
+# Problem Statement
 
-The dataset contains global video game sales data including:
+The global video game industry is one of the fastest-growing entertainment industries, generating billions of dollars annually. Thousands of games are released across different platforms and genres every year.
 
-• Game Name  
-• Platform  
-• Genre  
-• Publisher  
-• North America Sales  
-• Europe Sales  
-• Japan Sales  
-• Global Sales  
+However, understanding **why some games succeed globally while others perform well only in specific regions** is a major challenge for game developers and publishers.
 
----
+Companies need to understand:
 
-# Exploratory Data Analysis
+- Which genres generate the highest global demand  
+- Which platforms dominate the gaming market  
+- How player preferences differ across regions such as North America, Europe, and Japan  
+- Whether different types of games form natural market segments
 
-### Genre Distribution
-
-![Genre Distribution](images/genre_distribution.png)
-
-**Insight:** Action and Sports genres dominate the gaming market.
+This project analyzes global video game sales data to uncover patterns in the gaming market and identify hidden segments of games based on their sales behavior.
 
 ---
 
-### Global Sales by Genre
+# Dataset Description
 
-![Genre Sales](images/genre_sales.png)
+The dataset contains global video game sales information including:
 
-**Insight:** Certain genres generate significantly higher global revenue.
+- Game Name  
+- Platform  
+- Genre  
+- Publisher  
+- North America Sales  
+- Europe Sales  
+- Japan Sales  
+- Global Sales  
 
----
-
-### Platform Market Share
-
-![Platform Sales](images/platform_sales.png)
-
-**Insight:** Some platforms dominate global gaming sales.
-
----
-
-### Regional Sales Comparison
-
-![Regional Sales](images/regional_sales.png)
-
-**Insight:** North America and Europe show strong sales correlation.
+This data allows us to analyze how different factors influence the success of video games in different parts of the world.
 
 ---
 
-# Correlation Analysis
+# Genre Trends in the Gaming Industry
 
-![Correlation Heatmap](images/correlation_heatmap.png)
+![Genre Distribution](genre_distribution.png)
 
-**Insight:** Regional sales variables are highly correlated.
+The genre distribution shows the number of games released in each category.
 
----
-
-# PCA Visualization
-
-![PCA Plot](images/pca_plot.png)
-
-**Insight:** PCA reduces dimensionality while preserving major sales patterns.
+**Insight:**  
+Action, Sports, and Misc genres appear most frequently in the industry, indicating strong developer focus on these categories.
 
 ---
 
-# Elbow Method
+# Global Sales Performance by Genre
 
-![Elbow Method](images/elbow_method.png)
+![Genre Sales](genre_sales.png)
 
-**Insight:** The optimal number of clusters is identified using inertia values.
+This visualization highlights how much revenue different genres generate globally.
 
----
-
-# K-Means Clustering
-
-![Cluster Plot](images/cluster_plot.png)
-
-**Insight:** Clustering reveals different market segments based on sales patterns.
+**Insight:**  
+Some genres generate significantly higher global revenue, suggesting stronger player demand and market popularity.
 
 ---
 
-# Cluster Comparison
+# Platform Market Leaders
 
-![Cluster Comparison](images/cluster_comparison.png)
+![Platform Sales](platform_sales.png)
 
-**Insight:** Different clusters represent varying levels of game popularity.
+Different gaming platforms contribute differently to the global market.
+
+**Insight:**  
+Certain platforms dominate global game sales, showing how hardware ecosystems influence game success.
 
 ---
 
-# Publisher Market Analysis
+# Regional Gaming Preferences
 
-![Top Publishers](images/top_publishers.png)
+![Regional Sales](regional_sales.png)
 
-**Insight:** A few publishers dominate the video game industry.
+This chart compares total game sales across major gaming regions.
+
+**Insight:**  
+North America and Europe display similar market behavior, while Japan shows unique gaming preferences.
+
+---
+
+# Relationship Between Regional Markets
+
+![Correlation Heatmap](correlation_heatmap.png)
+
+The correlation heatmap reveals relationships between regional sales.
+
+**Insight:**  
+Sales in North America and Europe are highly correlated, meaning games popular in one region tend to perform well in the other.
+
+---
+
+# Market Pattern Exploration
+
+![Pairplot](pairplot.png)
+
+The pairplot visualizes relationships between sales variables across regions.
+
+**Insight:**  
+This helps identify patterns in how games perform across multiple global markets.
+
+---
+
+# Identifying Market Structure
+
+![PCA Plot](pca_plot.png)
+
+To better visualize the structure of the market, dimensionality reduction is used to simplify the dataset while preserving important patterns.
+
+**Insight:**  
+The transformed data helps reveal hidden groupings of games based on sales behavior.
+
+---
+
+# Determining Market Segments
+
+![Elbow Method](elbow_method.png)
+
+This method helps determine the appropriate number of segments in the gaming market.
+
+---
+
+# Game Market Segmentation
+
+![Cluster Plot](cluster_plot.png)
+
+Games are grouped into clusters based on similarities in regional sales performance.
+
+**Insight:**  
+Different clusters represent different types of games, such as globally successful titles, region-specific games, and moderately performing games.
+
+---
+
+# Comparing Market Segments
+
+![Cluster Comparison](cluster_comparison.png)
+
+This comparison highlights how each cluster differs in terms of regional sales.
+
+---
+
+# Major Publishers in the Gaming Industry
+
+![Top Publishers](top_publishers.png)
+
+Publisher analysis reveals which companies dominate the gaming market.
+
+**Insight:**  
+A small number of publishers account for a significant portion of global video game sales.
 
 ---
 
 # Tools Used
 
-• Python  
-• Pandas  
-• Scikit-learn  
-• Matplotlib  
-• Seaborn  
-• Google Colab  
-• GitHub
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Matplotlib  
+- Seaborn  
+- Google Colab  
+- GitHub  
 
 ---
 
 # Conclusion
 
-This project demonstrates how unsupervised machine learning can identify hidden patterns in global video game sales data. PCA and K-Means clustering reveal meaningful market segments that can support strategic decision-making in the gaming industry.
+The analysis highlights several important trends in the global gaming industry.
+
+- Certain genres dominate both game releases and revenue generation  
+- Some platforms generate significantly higher sales than others  
+- Regional preferences vary across global markets  
+- Games naturally form different market segments based on sales behavior
+
+These insights demonstrate how data analysis can help understand the structure of the video game market and support better strategic decisions for developers and publishers.
